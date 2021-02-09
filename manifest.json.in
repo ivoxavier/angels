@@ -1,0 +1,15 @@
+{
+    "name": "angels.ivoxavier",
+    "description": "Meditation with angels",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Angels",
+    "hooks": {
+        "angels": {
+            "apparmor": "angels.apparmor",
+            "desktop":  "angels.desktop"
+        }
+    },
+    "version": "0.0.1",
+    "maintainer": "Ivo Xavier <ivofernandes12@gmail.com>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}
