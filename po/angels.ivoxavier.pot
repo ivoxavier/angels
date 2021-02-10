@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: angels.ivoxavier\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-08 18:19+0000\n"
+"POT-Creation-Date: 2021-02-09 17:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,6 +266,10 @@ msgstr ""
 
 #: ../qml/ViewPage.qml:36
 msgid "Info"
+msgstr ""
+
+#: ../qml/ViewPage.qml:36
+msgid "Photos"
 msgstr ""
 
 #: ../qml/ViewPage.qml:36

@@ -23,10 +23,10 @@ Page{
     id:pagePushed;
     header: PageHeader {
         id: headerArchangelPage;
-        Connections{
-            target: archangelList
-            onHeaderNameSender: headerArchangelPage.title = title
-        }
+            Connections{
+                target: archangelList
+                onHeaderNameSender: headerArchangelPage.title = title
+            }
         leadingActionBar.actions: Action {
             text: i18n.tr("Back");
             iconName: "back";
@@ -36,12 +36,18 @@ Page{
             model: {[i18n.tr("Photos"), i18n.tr("Info"), i18n.tr("Prayer")]} //photos - index 0, info - index 1, prayer - index 2
             selectedIndex: 0
             onSelectedIndexChanged: {
-                if(sections.selectedIndex === 1){
+                if(sections.selectedIndex === 0){
+                    photoArchangelPage.visible = true;
                     infoColumn.visible = false;
-                    prayerColumn.visible = true;
-                } else {
+                    prayerColumn.visible = false;
+                } else if (sections.selectedIndex === 1) {
+                    photoArchangelPage.visible = false;
                     infoColumn.visible = true;
                     prayerColumn.visible = false;
+                } else {
+                    photoArchangelPage.visible = false;
+                    infoColumn.visible = false;
+                    prayerColumn.visible = true;
                 }
             }
         }  
@@ -51,24 +57,37 @@ Page{
     Image{
         id: photoArchangelPage;
         anchors.top: header.bottom;
-        //anchors.horizontalCenter: parent.horizontalCenter;
-        
-        fillMode: Image.Tile;
+        anchors.left: pagePushed.left
+        anchors.right: pagePushed.right
+        anchors.bottom: pagePushed.bottom
+        fillMode: Image.Strech;
+        Rectangle{
+            id: photoCopyRight
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            width: parent.width / 3
+            height: parent.height / 3
+            color: "red"
+        }
         Connections {
             target: archangelList
             onPhotoPathSender: photoArchangelPage.source = path;
         }
     }  
-        Column{
-            id: infoColumn;
-            topPadding: units.gu(3);
-            leftPadding: units.gu(1);
-            rightPadding: units.gu(1);
-            anchors.top: photoArchangelPage.bottom;
-            anchors.left: parent.left;
-            anchors.right: parent.right;
-            spacing: units.gu(2);
-            
+        
+
+
+        
+    Column{
+        id: infoColumn;
+        topPadding: units.gu(3);
+        leftPadding: units.gu(1);
+        rightPadding: units.gu(1);
+        anchors.top: header.bottom;
+        anchors.left: parent.left;
+        anchors.right: parent.right;
+        spacing: units.gu(2);
+        visible: false
             
         Text{
             id: favColor
@@ -97,7 +116,7 @@ Page{
             topPadding: units.gu(3);
             leftPadding: units.gu(1);
             rightPadding: units.gu(1);
-            anchors.top: photoArchangelPage.bottom;
+            anchors.top: header.bottom;
             anchors.left: parent.left;
             anchors.right: parent.right;
             spacing: units.gu(2);
