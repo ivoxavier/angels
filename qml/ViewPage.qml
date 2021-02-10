@@ -33,7 +33,7 @@ Page{
             onTriggered: pageStack.pop();
         }
         sections{
-            model: {[i18n.tr("Photos"), i18n.tr("Info"), i18n.tr("Prayer")]} //photos - index 0, info - index 1, prayer - index 2
+            model: {[i18n.tr("Photo"), i18n.tr("Info"), i18n.tr("Prayer")]} //photos - index 0, info - index 1, prayer - index 2
             selectedIndex: 0
             onSelectedIndexChanged: {
                 if(sections.selectedIndex === 0){
@@ -56,22 +56,40 @@ Page{
    
     Image{
         id: photoArchangelPage;
-        anchors.top: header.bottom;
-        anchors.left: pagePushed.left
-        anchors.right: pagePushed.right
-        anchors.bottom: pagePushed.bottom
+        anchors{
+        top: header.bottom;
+        left: pagePushed.left
+        right: pagePushed.right
+        bottom: pagePushed.bottom
+        }
         fillMode: Image.Strech;
         Rectangle{
-            id: photoCopyRight
+            id: photoCopyRightFrame
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             width: parent.width / 3
-            height: parent.height / 3
-            color: "red"
+            height: parent.height / 20
+            color: "white"
+            opacity: 0.5
+            radius: 3
+        }
+
+        Label{
+            id: photoCopyRight
+            anchors.centerIn: photoCopyRightFrame
+            text: i18n.tr("Source: Wikipédia")
+            property var wikipediaLink
+            MouseArea{
+                anchors.fill: parent
+                onClicked: {
+                Qt.openUrlExternally(photoCopyRight.wikipediaLink)
+                }
+            }
         }
         Connections {
             target: archangelList
             onPhotoPathSender: photoArchangelPage.source = path;
+            onPhotoSource: photoCopyRight.wikipediaLink = wikiUrl;
         }
     }  
         
