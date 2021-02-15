@@ -21,6 +21,7 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import Ubuntu.Components.Popups 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
+import QtQuick.Controls.Suru 2.2
 
 
 MainView {
@@ -28,31 +29,31 @@ MainView {
     objectName: 'mainView'
     applicationName: 'angels.ivoxavier'
     automaticOrientation: false
-
+    //backgroundColor: "#043247"
     ViewPage{
         id: archangelPage
         visible:false
     }
 
+    
+
     width: units.gu(45)
     height: units.gu(75)
-  PageStack{
+    PageStack{
       id: pageStack
       Component.onCompleted: push(mainPage)
-    Page {
-        id:mainPage
-        anchors.fill: parent
-        header: PageHeader {
-            id: header
-            title: i18n.tr('Angels & Archangels')
-            
-            StyleHints {
-                foregroundColor: UbuntuColors.porcelain
-                backgroundColor: "#594092"
-        }
+        Page {
+            id:mainPage
+            anchors.fill: parent
+            header: PageHeader {
+                id: header
+                title: i18n.tr('Meditation')
+                StyleHints {
+                    foregroundColor: UbuntuColors.porcelain
+                    backgroundColor: "#72d6ab"
+                 }
 
             }
-
 
         Column {
             anchors.top: header.bottom
@@ -62,13 +63,8 @@ MainView {
 
             Row {
                 id: topRow
-                spacing: units.gu(2)
-                Image{
-                    id: medidationHuman
-                    source: "./img/img_meditation.png"
-                    visible: false
-                }
-                UbuntuShape {source:medidationHuman}
+            
+                
 
                 Label{
                     id: meditationOfTheDayPhrase
@@ -84,22 +80,15 @@ MainView {
                     property var urielDay: locale.dayName(4) ///// Thursday
                     property var gabrielDay: locale.dayName(5) /// Friday
                     property var zadkielDay: locale.dayName(6) /// Saturday /* all of them are strings */
+
                     Component.onCompleted:{
-                        var variableWeekDay = meditationOfTheDayPhrase.deviceDay;
-                        const constWeekDay = [
-                        meditationOfTheDayPhrase.jophielDay,
-                        meditationOfTheDayPhrase.chamuelDay,
-                        meditationOfTheDayPhrase.michaelDay,
-                        meditationOfTheDayPhrase.raphaelDay,
-                        meditationOfTheDayPhrase.urielDay,
-                        meditationOfTheDayPhrase.gabrielDay,
-                        meditationOfTheDayPhrase.zadkielDay
-                        ];
+                        var variableWeekDay = deviceDay;
+                        const constWeekDay = [jophielDay,chamuelDay,michaelDay,raphaelDay,urielDay,gabrielDay,zadkielDay];
                         var loopsCount = -1
                         for(var i = 0;i < constWeekDay.length;i++){ /* gets the index position where the current weekDay matches the ArchangelDay. Since I need to elaborate a phrase with the ArchangelName I need a loopCounter to store number of times that corresponded to the ListView index model */
                             loopsCount++
                             if(variableWeekDay === constWeekDay[i]){
-                                meditationOfTheDayPhrase.text = i18n.tr("Today, ") + meditationOfTheDayPhrase.locale.dayName(i) + i18n.tr(" is ") + archangelList.model[loopsCount]
+                                meditationOfTheDayPhrase.text = i18n.tr("Today, ") + meditationOfTheDayPhrase.locale.dayName(i) + i18n.tr(" is ") + archangelList.model[loopsCount];
                             } else {console.log(archangelList.model[loopsCount] + ": not his day, yet")}
                         }
                     }
@@ -108,9 +97,8 @@ MainView {
 
             ListItem.ItemSelector {
                 id: archangelList
-                expanded: true // declare it false when uncomment the next line
-                //containerHeight: itemHeight * 8 // for future test to fix the bindding loop
-                text: i18n.tr("<b>Meditations:</b>")
+                expanded: true
+                
                 model: [
                 i18n.tr("Archangel Jophiel"),// index: 0
                 i18n.tr("Archangel Chamuel"),// index: 1
@@ -259,9 +247,9 @@ MainView {
                             console.log("index Reseted");
                             break;
                     } 
+                    }
                 }
             }
         }
-    }
     }    
 }

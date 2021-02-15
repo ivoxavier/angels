@@ -17,23 +17,27 @@
 
 import QtQuick 2.7
 import Ubuntu.Components 1.3
-
+import QtQuick.Controls.Suru 2.2
 
 Page{
     id:pagePushed;
     header: PageHeader {
         id: headerArchangelPage;
-            Connections{
-                target: archangelList
-                onHeaderNameSender: headerArchangelPage.title = title
-            }
+        StyleHints {
+            foregroundColor: UbuntuColors.porcelain
+            backgroundColor: "#72d6ab"
+        }
+        Connections{
+            target: archangelList
+            onHeaderNameSender: headerArchangelPage.title = title
+        }
         leadingActionBar.actions: Action {
             text: i18n.tr("Back");
             iconName: "back";
             onTriggered: pageStack.pop();
         }
         sections{
-            model: {[i18n.tr("Photo"), i18n.tr("Info"), i18n.tr("Prayer")]} //photos - index 0, info - index 1, prayer - index 2
+            model: {[i18n.tr("Photo"), i18n.tr("Info"), i18n.tr("Prayer")]} //photo - index 0, info - index 1, prayer - index 2
             selectedIndex: 0
             onSelectedIndexChanged: {
                 if(sections.selectedIndex === 0){
@@ -53,7 +57,6 @@ Page{
         }  
     }
 
-   
     Image{
         id: photoArchangelPage;
         anchors{
