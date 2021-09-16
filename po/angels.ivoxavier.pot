@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: angels.ivoxavier\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-15 12:24+0000\n"
+"POT-Creation-Date: 2021-09-16 09:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,55 +17,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:50
+#: ../app/Main.qml:50
 msgid "Meditation"
 msgstr ""
 
-#: ../qml/Main.qml:91
+#: ../app/Main.qml:91
 msgid " is "
 msgstr ""
 
-#: ../qml/Main.qml:91
+#: ../app/Main.qml:91
 msgid "Today, "
 msgstr ""
 
-#: ../qml/Main.qml:103 ../qml/Main.qml:161
+#: ../app/Main.qml:103 ../app/Main.qml:161
 msgid "Archangel Jophiel"
 msgstr ""
 
-#: ../qml/Main.qml:104 ../qml/Main.qml:172
+#: ../app/Main.qml:104 ../app/Main.qml:172
 msgid "Archangel Chamuel"
 msgstr ""
 
-#: ../qml/Main.qml:105 ../qml/Main.qml:183
+#: ../app/Main.qml:105 ../app/Main.qml:183
 msgid "Archangel Michael"
 msgstr ""
 
-#: ../qml/Main.qml:106 ../qml/Main.qml:194
+#: ../app/Main.qml:106 ../app/Main.qml:194
 msgid "Archangel Raphael"
 msgstr ""
 
-#: ../qml/Main.qml:107 ../qml/Main.qml:205
+#: ../app/Main.qml:107 ../app/Main.qml:205
 msgid "Archangel Uriel"
 msgstr ""
 
-#: ../qml/Main.qml:108 ../qml/Main.qml:216
+#: ../app/Main.qml:108 ../app/Main.qml:216
 msgid "Archangel Gabriel"
 msgstr ""
 
-#: ../qml/Main.qml:109 ../qml/Main.qml:227
+#: ../app/Main.qml:109 ../app/Main.qml:227
 msgid "Archangel Zadkiel"
 msgstr ""
 
-#: ../qml/Main.qml:110
+#: ../app/Main.qml:110
 msgid "Guardian Angel"
 msgstr ""
 
-#: ../qml/Main.qml:114
+#: ../app/Main.qml:114
 msgid "Color: Yellow"
 msgstr ""
 
-#: ../qml/Main.qml:115
+#: ../app/Main.qml:115
 msgid ""
 "Jophiel's talents include the flame of wisdom, intuition, insight, joy,"
 "happiness and enlightenment of the soul. Summon Jofiel when you need more "
@@ -75,7 +75,7 @@ msgid ""
 "insight or inspiration."
 msgstr ""
 
-#: ../qml/Main.qml:116
+#: ../app/Main.qml:116
 msgid ""
 "Archangel Jophiel, fill my body, mind and spirit with light!\n"
 "\n"
@@ -88,11 +88,11 @@ msgid ""
 "Archangel Jophiel, fill me with joy and laughter!"
 msgstr ""
 
-#: ../qml/Main.qml:118
+#: ../app/Main.qml:118
 msgid "Color: Pink"
 msgstr ""
 
-#: ../qml/Main.qml:119
+#: ../app/Main.qml:119
 msgid ""
 "Archangel Chamuel helps to renew and improve loving relationships with other "
 "people,contributing to the development of the Heart Chakra. It does so by "
@@ -105,7 +105,7 @@ msgid ""
 "people feel comforted and peaceful."
 msgstr ""
 
-#: ../qml/Main.qml:120
+#: ../app/Main.qml:120
 msgid ""
 "In the name of God, I AM THAT I AM\n"
 "\n"
@@ -114,11 +114,11 @@ msgid ""
 "*Repeat this second part nine times or more*"
 msgstr ""
 
-#: ../qml/Main.qml:122
+#: ../app/Main.qml:122
 msgid "Color: Blue"
 msgstr ""
 
-#: ../qml/Main.qml:123
+#: ../app/Main.qml:123
 msgid ""
 "The mighty Archangel Michael is the protector of humanity, the supreme "
 "commander and incorruptible of all the Archangels and the leader of the "
@@ -128,7 +128,7 @@ msgid ""
 "associated with power and the development of the Throat and Third Eye Chakras"
 msgstr ""
 
-#: ../qml/Main.qml:124
+#: ../app/Main.qml:124
 msgid ""
 "Saint Michael ahead,\n"
 "\n"
@@ -145,11 +145,11 @@ msgid ""
 "9x, 2x)"
 msgstr ""
 
-#: ../qml/Main.qml:126
+#: ../app/Main.qml:126
 msgid "Color: Green"
 msgstr ""
 
-#: ../qml/Main.qml:127
+#: ../app/Main.qml:127
 msgid ""
 "Archangel Raphael is known as the Angel of Science, Knowledge and Healing. "
 "The Jewish texts claim that he revealed to Noah the healing power of plants, "
@@ -158,7 +158,7 @@ msgid ""
 "responsibilities include healing wounds and mens diseases."
 msgstr ""
 
-#: ../qml/Main.qml:128
+#: ../app/Main.qml:128
 msgid ""
 "Archangel Raphael, heal my wounds from the past!\n"
 "\n"
@@ -175,11 +175,11 @@ msgid ""
 "Archangel Raphael, assist me in my healing work!"
 msgstr ""
 
-#: ../qml/Main.qml:130
+#: ../app/Main.qml:130
 msgid "Color: Red"
 msgstr ""
 
-#: ../qml/Main.qml:131
+#: ../app/Main.qml:131
 msgid ""
 "Uriel and Aurora and the Angels of Peace are gigantic beings - like those "
 "that were seen by Soviet cosmonauts. They can bring Peace to troubled areas "
@@ -194,7 +194,7 @@ msgid ""
 "you invite them into your life."
 msgstr ""
 
-#: ../qml/Main.qml:132
+#: ../app/Main.qml:132
 msgid ""
 "Archangel Uriel, fill me with peace!\n"
 "\n"
@@ -207,11 +207,11 @@ msgid ""
 "Archangel Uriel, help me to serve others to fulfill the divine purpose!"
 msgstr ""
 
-#: ../qml/Main.qml:134
+#: ../app/Main.qml:134
 msgid "Color: White"
 msgstr ""
 
-#: ../qml/Main.qml:135
+#: ../app/Main.qml:135
 msgid ""
 "St. Gabriel is an angel who serves as a messenger for God to certain people. "
 "He is one of the three archangels. Gabriel is mentioned in both the Old and "
@@ -223,7 +223,7 @@ msgid ""
 "with more insight and understanding in an answered prayer."
 msgstr ""
 
-#: ../qml/Main.qml:136
+#: ../app/Main.qml:136
 msgid ""
 "Archangel Gabriel, guide me along the path of my soul!\n"
 "\n"
@@ -242,11 +242,11 @@ msgid ""
 "Archangel Gabriel, save me from psychic attacks! (3x, 9x, 2x)"
 msgstr ""
 
-#: ../qml/Main.qml:138
+#: ../app/Main.qml:138
 msgid "Color: Violet"
 msgstr ""
 
-#: ../qml/Main.qml:139
+#: ../app/Main.qml:139
 msgid ""
 "The Violet Ray can summon Archangel ZadKiel, who promotes the Transformation "
 "of energy negative and the day is Saturday.\n"
@@ -255,7 +255,7 @@ msgid ""
 "Arches: Amethyst (soul mate) divine complement of Archangel Zadkiel)"
 msgstr ""
 
-#: ../qml/Main.qml:140
+#: ../app/Main.qml:140
 msgid ""
 "Welcome Michael and faith! Enter my life and my home!(3x)\n"
 "\n"
@@ -268,11 +268,11 @@ msgid ""
 "Archangel Zadkiel and Amethysy!(9x)"
 msgstr ""
 
-#: ../qml/Main.qml:142
+#: ../app/Main.qml:142
 msgid "Color: not specified"
 msgstr ""
 
-#: ../qml/Main.qml:143
+#: ../app/Main.qml:143
 msgid ""
 "It is very likely that, as a child, we had the Guardian Angel. It is very "
 "common, at least in our culture Judeo-Christian. Certainly, many of us "
@@ -280,7 +280,7 @@ msgid ""
 "or an uncle or aunt taught us"
 msgstr ""
 
-#: ../qml/Main.qml:144
+#: ../app/Main.qml:144
 msgid ""
 "Guardian Angel, sweet company, don't strip me, not by night, not by day.\n"
 "\n"
@@ -289,27 +289,27 @@ msgid ""
 "Guardian Angel Pray to God for me."
 msgstr ""
 
-#: ../qml/Main.qml:238
+#: ../app/Main.qml:238
 msgid "Archangel Guardian Angel"
 msgstr ""
 
-#: ../qml/ViewPage.qml:35
+#: ../app/ViewPage.qml:35
 msgid "Back"
 msgstr ""
 
-#: ../qml/ViewPage.qml:40
+#: ../app/ViewPage.qml:40
 msgid "Info"
 msgstr ""
 
-#: ../qml/ViewPage.qml:40
+#: ../app/ViewPage.qml:40
 msgid "Photo"
 msgstr ""
 
-#: ../qml/ViewPage.qml:40
+#: ../app/ViewPage.qml:40
 msgid "Prayer"
 msgstr ""
 
-#: ../qml/ViewPage.qml:83
+#: ../app/ViewPage.qml:83
 msgid "Source: Wikipédia"
 msgstr ""
 
